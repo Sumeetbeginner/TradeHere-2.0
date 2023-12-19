@@ -15,7 +15,34 @@
 
 <body>
 
- 
+  <div id="signupBox">
+
+    <p id="signupTitle">Sign Up</p>
+
+    <div class="form">
+      <input id="inpName" placeholder="Enter Name" type="text">
+
+      <input id="inpEmail" placeholder="Enter Email" type="text">
+
+      <input id="inpPass" placeholder="Create a Password" type="text">
+
+      <select name="gender" id="inpGender">
+        <option value="null">Select Gender</option>
+        <option value="Male">Male ♂️</option>
+        <option value="Female">Female ♀️</option>
+      </select>
+
+      <button onclick="signupUser()" id="signupBtn">Register</button>
+
+    </div>
+
+    <p class="textCenter">Or</p>
+
+    <a class="anchorTag" href="login.html"><button id="loginBtn">Log in to Existing Account</button></a>
+
+
+  </div>
+
 
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
