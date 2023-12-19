@@ -117,7 +117,7 @@ a{
 }
 
 /* Media Query for PC */
-@media (min-width:1025px) {
+@media (min-width:700px) {
 
     #fPass1:hover{
         color: red;
