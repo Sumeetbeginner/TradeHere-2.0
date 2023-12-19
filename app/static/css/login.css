@@ -1,23 +1,150 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --dark : #222831;
-    --light : #393E46;
-    --material :#00ADB5;
-    --text : "#EEEEEE";
-    --red : #FA7070;
-    --green : #557C55;
+:root {
+    --dark: #14152a;
+    --light: #2f3046;
+    --material: #3a3fc5;
+    --red: #a15250;
+    --green: #3f604d;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-color: var(--light);
     user-select: none;
+    color: white;
+    font-family: 'Open Sans';
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#loginBox{
+
+    width: 100%;
+    height: 100vh;
+    display: block;
+    margin: auto;
+    margin-top: 0%;
+    background-color: var(--dark);
+
+}
+
+#loginTitle{
+
+    text-align: center;
+    background-color: var(--material);
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 28px;
+}
+
+input{
+    width: 84%;
+    height: 6vh;
+    background-color: var(--light);
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-top: 10%;
+    color: white;
+}
+
+button{
+    width: 55%;
+    height: 6vh;
+    background-color: var(--material);
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-top: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+#signupBtn{
+    width: 70%;
+    margin-top: 6%;
+}
+
+.textCenter{
+    text-align: center;
+    margin-top: 6%;
+}
+
+input:focus{
+    border: solid 2px var(--material);
+    
+}
+
+#inpEmail{
+    margin-top: 13%;
+}
+
+a{
+    color: var(--red);
+}
+
+#fPass1{
+
+    display: block;
+    margin: auto;
+    margin-top: 6%;
+    width: fit-content;
+    text-decoration: underline;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.anchorTag{
+    text-decoration: none;
+}
+
+/* Media Query for PC */
+@media (min-width:1025px) {
+
+    #fPass1:hover{
+        color: red;
+    }
+
+    button:hover{
+        background-color: #494ee6;
+    }
+
+    #loginBox{
+
+        width: 30%;
+        height: 80vh;
+        display: block;
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 14px;
+        background-color: var(--dark);
+    }
+    
+    #loginTitle{
+        font-size: 30px;
+        text-align: center;
+        background-color: var(--material);
+        border-radius: 14px 14px 0px 0px ;
+        padding-top: 1%;
+        padding-bottom: 1.5%;
+    }
+
 }

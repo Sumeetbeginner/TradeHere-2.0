@@ -15,7 +15,27 @@
 
 <body>
 
- 
+  <div id="loginBox">
+
+    <p id="loginTitle">Login</p>
+
+    <div class="form">
+      <input id="inpEmail" placeholder="Enter Registered Email" type="text">
+
+      <input id="inpPass" placeholder="Enter Password" type="text">
+
+      <p onclick="forgotPassword()" id="fPass1">Forgot Password?</p>
+
+      <button onclick="loginUser()" id="loginBtn">Login</button>
+
+    </div>
+
+    <p class="textCenter">Or</p>
+
+    <a class="anchorTag" href="signup.html"><button id="signupBtn">Create a New Account</button></a>
+
+
+  </div>
 
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>

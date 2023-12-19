@@ -6,18 +6,24 @@
     padding: 0;
 }
 
-:root{
-    --dark : #222831;
-    --light : #393E46;
-    --material :#00ADB5;
-    --text : "#EEEEEE";
-    --red : #FA7070;
-    --green : #557C55;
+:root {
+    --dark: #14152a;
+    --light: #2f3046;
+    --material: #3a3fc5;
+    --text: "#cccfd7";
+    --red: #a15250;
+    --green: #3f604d;
 }
-
 body{
     width: 100%;
     height: 100vh;
     background-color: var(--light);
     user-select: none;
+    color: white;
+    font-family: 'Open Sans';
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
