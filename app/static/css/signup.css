@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark : #222831;
+    --light : #393E46;
+    --material :#00ADB5;
+    --text : "#EEEEEE";
+    --red : #FA7070;
+    --green : #557C55;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light);
+    user-select: none;
+}
