@@ -3,4 +3,6 @@
 
 <!-- 2. Decide the Color Palette for the website -->
 
-3. Setup Flask
+<!-- 3. Setup Flask -->
+
+4. Create a Responsive Navbar 

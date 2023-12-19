@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradeHere</title>
 
-    <script
-      src="https://kit.fontawesome.com/6cc1a5eb9c.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeHere</title>
 
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}"
-    />
+  <script src="https://kit.fontawesome.com/6cc1a5eb9c.js" crossorigin="anonymous"></script>
 
-    <link
-      rel="shortcut icon"
-      href="{{ url_for('static', filename='images/appLogo.png')}}"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-  
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-  </body>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/appLogo.png')}}" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- NavBar Icon for Phone -->
+  <div id="topBar1">
+    <i onclick="openPhoneNavbar()" id="hamburgerMenu1" class="fa-solid fa-bars"></i>
+  </div>
+
+  <div id="sideBar1">
+
+    <!-- Close NavBar for Phone -->
+    <i onclick="closeNavBar()" id="closeNavBar" class="fa-solid fa-xmark"></i>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
 </html>

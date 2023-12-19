@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark : #222831;
+    --light : #393E46;
+    --material :#00ADB5;
+    --text : "#EEEEEE";
+    --red : #FA7070;
+    --green : #557C55;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light);
+    user-select: none;
+}
+
+i{
+    color: white;
+    font-size: 30px;
+   
+}
+
+#topBar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+}
+
+#hamburgerMenu1{
+    margin-right: auto;
+    margin-left: 8%;
+}
+
+#sideBar1{
+    width: 65%;
+    height: 100vh;
+    background-color: var(--dark);
+    border-radius: 0px 15px 15px 0px;
+    position: fixed;
+    left: -65%;
+    top: 0%;
+    transition: all 0.4s ease-in-out;
+}
+
+#closeNavBar{
+    padding-top: 10%;
+    font-size: 30px;
+    margin-left: 80%;
+    
+}
+
+/* Media Query for PC */
+@media (min-width:1025px) {
+
+
+    #topBar1{
+        display: none;
+    }
+
+    #sideBar1{
+        width: 17%;
+        height: 100vh;
+        background-color: var(--dark);
+        border-radius: 0px 15px 15px 0px;
+        left: 0%;
+    }
+
+    #closeNavBar{
+        display: none;
+    }
+
+}
