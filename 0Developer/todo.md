@@ -17,7 +17,7 @@
 
 <!-- 9. Validate all Inputs on signuppage -->
 
-10. Signup Firebase JS
+<!-- 10. Signup Firebase JS -->
 
 11. Login Firebase JS
 

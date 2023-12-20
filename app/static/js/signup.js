@@ -1,3 +1,18 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyAjU-DJXpGMdPI-wf0cM8SWNcP_h4NeSQw",
+    authDomain: "traderhere-18690.firebaseapp.com",
+    projectId: "traderhere-18690",
+    storageBucket: "traderhere-18690.appspot.com",
+    messagingSenderId: "417776811155",
+    appId: "1:417776811155:web:07e8057c4d445841d1a166",
+    measurementId: "G-CDEN0SSKMC"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
+const analytics = firebase.analytics();
+
 function validateEmail(email) {
 
     const emailRegex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -38,7 +53,26 @@ function signupUser() {
         alert("⚠️ Kindly Select Gender")
     }
     else{
+        let email = document.getElementById("inpEmail").value;
+        let password = document.getElementById("inpPass").value;
+        let name = document.getElementById("inpName").value;
+        let gender = document.getElementById("inpGender").value;
         // Sign up Logic
-        
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then((userCredential) =>{
+            const user = userCredential.user;
+
+            firebase.database().ref('user/' + user.uid).set({
+                email,
+                name,
+                gender,
+
+            });
+            alert("✅ User Registered Successfully!");
+        })
+        .catch((error) =>{
+            const errorMessage = error.message;
+            alert("Error : " + errorMessage );
+        })
     }
 }
