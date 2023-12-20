@@ -15,7 +15,7 @@ const analytics = firebase.analytics();
 
 function validateEmail(email) {
 
-    const emailRegex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
@@ -35,8 +35,8 @@ function validateGender(gender) {
 }
 
 function signupUser() {
-    
-    if(!validateName(document.getElementById("inpName").value)){
+
+    if (!validateName(document.getElementById("inpName").value)) {
         alert("⚠️ Name Should contain more than 3 Characters")
     }
     else if (!validateEmail(document.getElementById("inpEmail").value)) {
@@ -44,35 +44,39 @@ function signupUser() {
         alert("Kindly Enter Correct Email Format ⚠️");
 
     }
-    else if(!validatePassword(document.getElementById("inpPass").value)) {
+    else if (!validatePassword(document.getElementById("inpPass").value)) {
 
         alert("Password Should Contain more than 8 characters ⚠️");
 
     }
-    else if(!validateGender(document.getElementById("inpGender").value)){
+    else if (!validateGender(document.getElementById("inpGender").value)) {
         alert("⚠️ Kindly Select Gender")
     }
-    else{
+    else {
         let email = document.getElementById("inpEmail").value;
         let password = document.getElementById("inpPass").value;
         let name = document.getElementById("inpName").value;
         let gender = document.getElementById("inpGender").value;
         // Sign up Logic
         firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then((userCredential) =>{
-            const user = userCredential.user;
+            .then((userCredential) => {
+                const user = userCredential.user;
 
-            firebase.database().ref('user/' + user.uid).set({
-                email,
-                name,
-                gender,
+                firebase.database().ref('users/' + user.uid).set({
+                    email,
+                    name,
+                    gender,
 
-            });
-            alert("✅ User Registered Successfully!");
-        })
-        .catch((error) =>{
-            const errorMessage = error.message;
-            alert("Error : " + errorMessage );
-        })
+                })
+            .then(() => {
+
+                    alert("✅ User Registered Successfully!");
+                    window.location = "login.html";
+                })
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                alert("Error : " + errorMessage);
+            })
     }
 }

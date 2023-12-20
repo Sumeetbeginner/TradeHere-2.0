@@ -19,6 +19,6 @@
 
 <!-- 10. Signup Firebase JS -->
 
-11. Login Firebase JS
+<!-- 11. Login Firebase JS and store user data in local Storage -->
 
 12. reset password email firebase JS - forgot password
