@@ -13,9 +13,9 @@
 
 <!-- 7. Add a Validation for login input -->
 
-8. Create a Signup Page Frontend Responsive and if user want to login a account redirect to login page and option
+<!-- 8. Create a Signup Page Frontend Responsive and if user want to login a account redirect to login page and option -->
 
-9. Validate all Inputs on signuppage
+<!-- 9. Validate all Inputs on signuppage -->
 
 10. Signup Firebase JS
 

@@ -124,6 +124,10 @@ a{
 @media (min-width:1024px) {
 
 
+    select:focus{
+        border: solid 2px var(--material);
+    }
+
     button:hover{
         background-color: #494ee6;
     }
