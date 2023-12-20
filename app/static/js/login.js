@@ -71,3 +71,17 @@ function loginUser() {
 
     }
 }
+
+
+function resetPassword(){
+    let email = document.getElementById("inpEmail").value;
+
+    firebase.auth().sendPasswordResetEmail(email)
+    .then(() =>{
+        alert("✅ Password Reset Link Sent to your Registered Email Address");
+    })
+    .catch((error) =>{
+        const errorMessage = error.message;
+        alert(`⚠️ ${errorMessage}`);
+    })
+}
