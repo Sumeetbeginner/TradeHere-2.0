@@ -65,9 +65,112 @@ i{
     
 }
 
+#appNameLogo{
+    display: block;
+    margin: auto;
+    /* margin-left: 7%; */
+}
+
+#navItems{
+    width: 100%;
+}
+
+.flexNav{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.navTitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navItems i{
+    margin-left: 15%;
+}
+
+
+.fa-solid{
+    font-size: 18px;
+    
+}
+
+.flexNav{
+   margin-top: 5%;
+   cursor: pointer;
+   padding: 4% 0%;
+   margin-left: 3%;
+   width: 94%;
+   border-radius: 13px;
+}
+
+.flexNav:active{
+    background-color: #3a3fc5;
+}
+
+.navTitle{
+    margin-left: 8%;
+}
+
+#helpNav{
+    margin-top: 45%;
+}
+
+#homeNav{
+
+    margin-top: 5%;
+    background-color: var(--material);
+    width: 94%;
+    border-radius: 13px;
+}
+
 /* Media Query for PC */
 @media (min-width:1024px) {
 
+    #navItems i{
+        margin-left: 15%;
+    }
+    
+
+    .fa-solid{
+        font-size: 21px;
+        
+    }
+
+    .flexNav{
+       margin-top: 5%;
+       cursor: pointer;
+       padding: 5% 0%;
+       margin-left: 3%;
+       width: 94%;
+       border-radius: 13px;
+    }
+
+    .flexNav:hover{
+        background-color: #3a3fc5;
+    }
+
+    .navTitle{
+        margin-left: 8%;
+    }
+
+    #helpNav{
+        margin-top: 50%;
+    }
+
+    #homeNav{
+
+        margin-top: 5%;
+        background-color: var(--material);
+        width: 94%;
+        border-radius: 13px;
+    }
+    
+    #appNameLogo{
+        display: block;
+        margin: auto;
+    }
 
     #topBar1{
         display: none;
@@ -84,5 +187,7 @@ i{
     #closeNavBar{
         display: none;
     }
+
+    
 
 }

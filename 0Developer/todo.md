@@ -21,4 +21,6 @@
 
 <!-- 11. Login Firebase JS and store user data in local Storage -->
 
-12. reset password email firebase JS - forgot password
+<!-- 12. reset password email firebase JS - forgot password -->
+
+<!-- 13. Add all Menus Text and Icons in Navbar Responsively - Home/Stocks/Portfolio/WatchList/Wallet/Help/Setting -->
