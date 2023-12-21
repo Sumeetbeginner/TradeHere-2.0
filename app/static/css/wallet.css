@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +14,7 @@
     --green: #3f604d;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-color: var(--light);
@@ -25,29 +24,29 @@ body{
     overflow: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-i{
+i {
     color: white;
     font-size: 30px;
-   
+
 }
 
-#topBar1{
+#topBar1 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 6%;
 }
 
-#hamburgerMenu1{
+#hamburgerMenu1 {
     margin-right: auto;
     margin-left: 8%;
 }
 
-#sideBar1{
+#sideBar1 {
     width: 65%;
     height: 100vh;
     background-color: var(--dark);
@@ -58,66 +57,66 @@ i{
     transition: all 0.4s ease-in-out;
 }
 
-#closeNavBar{
+#closeNavBar {
     padding-top: 10%;
     font-size: 30px;
     margin-left: 80%;
-    
+
 }
 
-#appNameLogo{
+#appNameLogo {
     display: block;
     margin: auto;
     /* margin-left: 7%; */
 }
 
-#navItems{
+#navItems {
     width: 100%;
 }
 
-.flexNav{
+.flexNav {
     display: flex;
     justify-content: start;
     align-items: start;
 }
 
-.navTitle{
+.navTitle {
     font-size: 20px;
     font-weight: 500;
 }
 
-#navItems i{
+#navItems i {
     margin-left: 15%;
 }
 
 
-.fa-solid{
+.fa-solid {
     font-size: 18px;
-    
+
 }
 
-.flexNav{
-   margin-top: 5%;
-   cursor: pointer;
-   padding: 4% 0%;
-   margin-left: 3%;
-   width: 94%;
-   border-radius: 13px;
+.flexNav {
+    margin-top: 5%;
+    cursor: pointer;
+    padding: 4% 0%;
+    margin-left: 3%;
+    width: 94%;
+    border-radius: 13px;
 }
 
-.flexNav:active{
+.flexNav:active {
     background-color: #3a3fc5;
 }
 
-.navTitle{
+.navTitle {
     margin-left: 8%;
 }
 
-#helpNav{
+#helpNav {
     margin-top: 45%;
 }
 
-#walletNav{
+#walletNav {
 
     margin-top: 5%;
     background-color: var(--material);
@@ -125,62 +124,128 @@ i{
     border-radius: 13px;
 }
 
-#hamburgerMenu1{
+#hamburgerMenu1 {
     font-size: 26px;
+}
+
+#grandParentLayout {
+    width: 96%;
+    background-color: var(--dark);
+    display: block;
+    margin: auto;
+    height: 93vh;
+    margin-top: 4%;
+    border-radius: 12px;
+}
+
+#parent1Layout {
+    display: none;
+}
+
+#parent2Layout {
+    display: none;
 }
 
 /* Media Query for PC */
 @media (min-width:1024px) {
 
-    #navItems i{
+    #grandParentLayout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 83%;
+        height: 100vh;
+       background-color: var(--light);
+       margin: 0;
+        margin-left: auto;
+    }
+
+    #parent1Layout {
+        display: block;
+        width: 56%;
+        height: 100vh;
+        margin-right: auto;
+        margin-left: 1%;
+
+    }
+
+    #child1Layout {
+        display: block;
+        width: 100%;
+        height: 47vh;
+        margin-top: 1.7%;
+        border-radius: 15px;
+        background-color: var(--dark);
+    }
+
+    #child2Layout {
+        display: block;
+        margin-top: 1.7%;
+        width: 100%;
+        height: 48vh;
+        border-radius: 15px;
+        background-color: var(--dark);
+
+    }
+
+    #parent2Layout {
+        display: block;
+        width: 41%;
+        height: 96vh;
+        margin-right: 1%;
+        background-color: var(--dark);
+        border-radius: 15px;
+    }
+
+    #navItems i {
         margin-left: 15%;
     }
-    
 
-    .fa-solid{
+
+    .fa-solid {
         font-size: 21px;
-        
+
     }
 
-    .flexNav{
-       margin-top: 5%;
-       cursor: pointer;
-       padding: 5% 0%;
-       margin-left: 3%;
-       width: 94%;
-       border-radius: 13px;
+    .flexNav {
+        margin-top: 5%;
+        cursor: pointer;
+        padding: 5% 0%;
+        margin-left: 3%;
+        width: 94%;
+        border-radius: 13px;
     }
 
-    .flexNav:hover{
+    .flexNav:hover {
         background-color: #3a3fc5;
     }
 
-    .navTitle{
+    .navTitle {
         margin-left: 8%;
     }
 
-    #helpNav{
+    #helpNav {
         margin-top: 50%;
     }
 
-    #walletNav{
+    #walletNav {
 
         margin-top: 5%;
         background-color: var(--material);
         width: 94%;
         border-radius: 13px;
     }
-    
-    #appNameLogo{
+
+    #appNameLogo {
         display: block;
         margin: auto;
     }
 
-    #topBar1{
+    #topBar1 {
         display: none;
     }
 
-    #sideBar1{
+    #sideBar1 {
         width: 17%;
         height: 100vh;
         background-color: var(--dark);
@@ -188,10 +253,10 @@ i{
         left: 0%;
     }
 
-    #closeNavBar{
+    #closeNavBar {
         display: none;
     }
 
-    
+
 
 }
