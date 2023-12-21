@@ -24,3 +24,5 @@
 <!-- 12. reset password email firebase JS - forgot password -->
 
 <!-- 13. Add all Menus Text and Icons in Navbar Responsively - Home/Stocks/Portfolio/WatchList/Wallet/Help/Setting -->
+
+<!-- 14. Make all Pages and Redirect onclick on menu icon -->

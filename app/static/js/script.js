@@ -45,3 +45,6 @@ function closeNavBar() {
     }
 }
 
+function openPage(link){
+    window.location = link
+}

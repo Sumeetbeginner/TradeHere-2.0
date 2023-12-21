@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeHere</title>
+
+  <script src="https://kit.fontawesome.com/6cc1a5eb9c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/wallet.css') }}" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/appLogo.png')}}" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- NavBar Icon for Phone -->
+  <div id="topBar1">
+    <i onclick="openPhoneNavbar()" id="hamburgerMenu1" class="fa-solid fa-bars"></i>
+  </div>
+
+  <div id="sideBar1">
+
+    <!-- Close NavBar for Phone -->
+    <i onclick="closeNavBar()" id="closeNavBar" class="fa-solid fa-xmark"></i>
+
+    <img id="appNameLogo" src="../static/images/appNameLogo.png" alt="">
+
+    <div id="navItems">
+
+      <div onclick="openPage('/')" id="homeNav" class="flexNav">
+        <i class="fa-solid fa-house"></i>
+        <p class="navTitle">Home</p>
+      </div>
+      <div onclick="openPage('stocks.html')" id="stocksNav" class="flexNav">
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <p class="navTitle">Stocks</p>
+      </div>
+      <div onclick="openPage('portfolio.html')" id="portfolioNav" class="flexNav">
+        <i class="fa-solid fa-briefcase"></i>
+        <p class="navTitle">Portfolio</p>
+      </div>
+      <div onclick="openPage('watchlist.html')" id="watchlistNav" class="flexNav">
+        <i class="fa-solid fa-bookmark"></i>
+        <p class="navTitle">Watchlist</p>
+      </div>
+      <div onclick="openPage('wallet.html')" id="walletNav" class="flexNav">
+        <i class="fa-solid fa-wallet"></i>
+        <p class="navTitle">Wallet</p>
+      </div>
+
+
+
+      <div onclick="openPage('help.html')" id="helpNav" class="flexNav">
+        <i class="fa-solid fa-comment"></i>
+        <p class="navTitle">Help</p>
+      </div>
+    
+      <div onclick="openPage('setting.html')"  id="settingNav" class="flexNav">
+        <i class="fa-solid fa-gear"></i>
+        <p class="navTitle">Setting</p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+
+  <script src="{{ url_for('static', filename='js/wallet.js') }}"></script>
+</body>
+
+</html>

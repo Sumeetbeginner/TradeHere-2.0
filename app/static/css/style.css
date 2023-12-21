@@ -125,6 +125,10 @@ i{
     border-radius: 13px;
 }
 
+#hamburgerMenu1{
+    font-size: 26px;
+}
+
 /* Media Query for PC */
 @media (min-width:1024px) {
 

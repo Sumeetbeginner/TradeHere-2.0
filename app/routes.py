@@ -14,3 +14,27 @@ def login():
 def signup():
     return render_template('signup.html')
 
+@app.route('/stocks.html')
+def stocks():
+    return render_template('stocks.html')
+
+@app.route('/portfolio.html')
+def portfolio():
+    return render_template('portfolio.html')
+
+@app.route('/help.html')
+def help():
+    return render_template('help.html')
+
+@app.route('/setting.html')
+def setting():
+    return render_template('setting.html')
+
+@app.route('/watchlist.html')
+def watchlist():
+    return render_template('watchlist.html')
+
+@app.route('/wallet.html')
+def wallet():
+    return render_template('wallet.html')
+

@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: #14152a;
+    --light: #2f3046;
+    --material: #3a3fc5;
+    --text: "#cccfd7";
+    --red: #a15250;
+    --green: #3f604d;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light);
+    user-select: none;
+    color: white;
+    font-family: 'Open Sans';
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+i{
+    color: white;
+    font-size: 30px;
+   
+}
+
+#topBar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+}
+
+#hamburgerMenu1{
+    margin-right: auto;
+    margin-left: 8%;
+}
+
+#sideBar1{
+    width: 65%;
+    height: 100vh;
+    background-color: var(--dark);
+    border-radius: 0px 15px 15px 0px;
+    position: fixed;
+    left: -65%;
+    top: 0%;
+    transition: all 0.4s ease-in-out;
+}
+
+#closeNavBar{
+    padding-top: 10%;
+    font-size: 30px;
+    margin-left: 80%;
+    
+}
+
+#appNameLogo{
+    display: block;
+    margin: auto;
+    /* margin-left: 7%; */
+}
+
+#navItems{
+    width: 100%;
+}
+
+.flexNav{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.navTitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navItems i{
+    margin-left: 15%;
+}
+
+
+.fa-solid{
+    font-size: 18px;
+    
+}
+
+.flexNav{
+   margin-top: 5%;
+   cursor: pointer;
+   padding: 4% 0%;
+   margin-left: 3%;
+   width: 94%;
+   border-radius: 13px;
+}
+
+.flexNav:active{
+    background-color: #3a3fc5;
+}
+
+.navTitle{
+    margin-left: 8%;
+}
+
+#helpNav{
+    margin-top: 45%;
+}
+
+#walletNav{
+
+    margin-top: 5%;
+    background-color: var(--material);
+    width: 94%;
+    border-radius: 13px;
+}
+
+#hamburgerMenu1{
+    font-size: 26px;
+}
+
+/* Media Query for PC */
+@media (min-width:1024px) {
+
+    #navItems i{
+        margin-left: 15%;
+    }
+    
+
+    .fa-solid{
+        font-size: 21px;
+        
+    }
+
+    .flexNav{
+       margin-top: 5%;
+       cursor: pointer;
+       padding: 5% 0%;
+       margin-left: 3%;
+       width: 94%;
+       border-radius: 13px;
+    }
+
+    .flexNav:hover{
+        background-color: #3a3fc5;
+    }
+
+    .navTitle{
+        margin-left: 8%;
+    }
+
+    #helpNav{
+        margin-top: 50%;
+    }
+
+    #walletNav{
+
+        margin-top: 5%;
+        background-color: var(--material);
+        width: 94%;
+        border-radius: 13px;
+    }
+    
+    #appNameLogo{
+        display: block;
+        margin: auto;
+    }
+
+    #topBar1{
+        display: none;
+    }
+
+    #sideBar1{
+        width: 17%;
+        height: 100vh;
+        background-color: var(--dark);
+        border-radius: 0px 15px 15px 0px;
+        left: 0%;
+    }
+
+    #closeNavBar{
+        display: none;
+    }
+
+    
+
+}
