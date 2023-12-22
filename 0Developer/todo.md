@@ -37,4 +37,11 @@
 
 <!-- 19. Set up stockinfo.html page -->
 
-20. Now, fetch the curr stock ticker data from yfinance py library by connecting js and python 
+<!-- 20. Now, fetch the curr stock ticker data from yfinance py library by connecting js and python  -->
+
+21. Organize the data in impstockdata object which are imp to store and show to user in local storage
+
+22. Create a Layout include buy/sell btn / analytics button and back button for stockinfo.js responsive
+
+24. Show all Data on Stockinfo.js including graph of today highest , lowest, start, curr price in chartjs
+

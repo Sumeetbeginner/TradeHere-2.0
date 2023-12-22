@@ -6,3 +6,4 @@ app = Flask(__name__)
 CORS(app)
 
 from app import routes
+from app import stockData

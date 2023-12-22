@@ -21,6 +21,7 @@ body {
     user-select: none;
     color: white;
     font-family: 'Open Sans';
+    visibility:hidden;
     overflow: hidden;
 }
 

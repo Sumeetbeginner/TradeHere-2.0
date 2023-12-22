@@ -28,3 +28,34 @@ function checkUserAuth(){
 }
 
 checkUserAuth();
+
+let currStockTicker = localStorage.getItem("currStockTicker")
+
+function getStockDataFromPython(){
+
+    const data = {
+        stockTickerSymbol : currStockTicker
+    }
+
+    fetch('/stock_operation', {
+        method: 'POST',
+        headers:{
+            'Content-type' : 'application/json'
+        },
+
+        body: JSON.stringify(data)
+    })
+    .then(response => (response.json()))
+    .then(function (result){
+        // Converting Object into a JSON String before storing it
+        const resultJSONString = JSON.stringify(result.result);
+
+        // Store the JSON string in local storage
+        localStorage.setItem('stockResult', resultJSONString);
+        localStorage.setItem('stockNews', JSON.stringify(result.result2));
+
+        document.body.style.visibility = "visible";
+    });
+}
+
+getStockDataFromPython();
