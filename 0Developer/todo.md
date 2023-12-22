@@ -27,5 +27,10 @@
 
 <!-- 14. Make all Pages and Redirect onclick on menu icon -->
 
-15. Create a Layout for a wallet 
+<!-- 15. Create a Layout for a wallet responsive -->
 
+<!-- 16.  Get NSE Stocks Data and upload in the folder Data  -->
+
+<!-- 17. In the Stocks Page Create a Search Bar to search a NSE Stock data and onclick stock open stockinfo.html and store currStockData, currStockTicker and currStockDate in Local Storage -->
+
+<!-- 18. Make Stock Page search bar responsive -->

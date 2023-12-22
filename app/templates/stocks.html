@@ -55,8 +55,8 @@
         <i class="fa-solid fa-comment"></i>
         <p class="navTitle">Help</p>
       </div>
-    
-      <div onclick="openPage('setting.html')"  id="settingNav" class="flexNav">
+
+      <div onclick="openPage('setting.html')" id="settingNav" class="flexNav">
         <i class="fa-solid fa-gear"></i>
         <p class="navTitle">Setting</p>
       </div>
@@ -66,6 +66,14 @@
 
   </div>
 
+  <div id="stockBox">
+
+    <input type="text" id="searchInput" placeholder="Search a Stock...">
+
+    <div id="suggestionsContainer"></div>
+
+  </div>
+  
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>

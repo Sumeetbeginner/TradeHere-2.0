@@ -38,3 +38,7 @@ def watchlist():
 def wallet():
     return render_template('wallet.html')
 
+@app.route('/stockinfo.html')
+def stockinfo():
+    return render_template('stockinfo.html')
+
