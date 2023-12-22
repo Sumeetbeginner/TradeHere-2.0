@@ -34,3 +34,7 @@
 <!-- 17. In the Stocks Page Create a Search Bar to search a NSE Stock data and onclick stock open stockinfo.html and store currStockData, currStockTicker and currStockDate in Local Storage -->
 
 <!-- 18. Make Stock Page search bar responsive -->
+
+<!-- 19. Set up stockinfo.html page -->
+
+20. Now, fetch the curr stock ticker data from yfinance py library by connecting js and python 
